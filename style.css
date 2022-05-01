@@ -1,0 +1,97 @@
+body {
+    font-family: monospace;
+    color: white ;
+    background-color: #2e2e2e;
+    margin-left: 70px; 
+    margin-top: 15px;
+    padding: 0px 10px;
+}
+.alert {
+    padding: 15px;
+    background: #ff4040;
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+  }
+
+.fa-close {
+    font-size: 25px;
+    position: relative;
+    text-align: left;
+}
+
+.home {
+    padding: 15px;
+    background: rgb(27, 27, 27);
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+}
+.prg {
+    padding: 15px;
+    background: rgb(27, 27, 27);
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+}
+
+.card {
+    padding: 15px;
+    background: rgb(5, 5, 5);
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 30px;
+    min-width: 200px;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+ /* The sidebar menu */
+ .sidenav {
+    transition-property: width;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    height: 100%; 
+    width: 60px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 

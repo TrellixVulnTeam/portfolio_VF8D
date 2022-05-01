@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/f2226cac54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="info.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script>
+        var open = 0
+        function Nav() {
+            if (open == 1) {
+                document.getElementById("sidenav").style.width = "60px";
+                document.getElementById("thing0").style.display = "none";
+                document.getElementById("thing1").style.display = "none";
+                document.getElementById("thing2").style.display = "none";
+                document.getElementById("thing3").style.display = "none";
+                open = 0
+            } else {
+                document.getElementById("sidenav").style.width = "auto";
+                document.getElementById("thing0").style.display = "inline";
+                document.getElementById("thing1").style.display = "inline";
+                document.getElementById("thing2").style.display = "inline";
+                document.getElementById("thing3").style.display = "inline";
+                open = 1
+            }
+        } 
+    </script>
+    <div class="sidenav" id="sidenav"><a href="javascript:void(0)" class="closebtn" onclick="Nav()"><i
+                class="fa-solid fa-bars"></i></a>
+        <a href="/" style="margin-top: 0px; position: relative;"><i class="fa-solid fa-house"></i>
+            <h4 id="thing0" style="display: none;"> Home</h4>
+        </a>
+        <a href="/pages/info.html" style="margin-top: 5px; position: relative;"><i class="fa-solid fa-circle-info"></i>
+            <h4 id="thing1" style="display: none;"> Info</h4>
+        </a>
+        <a href="/pages/minigames.html" style="margin-top: 5px; position: relative;"><i class="fa-solid fa-trophy"></i>
+            <h4 id="thing2" style="display: none;"> Minigames</h4>
+        </a>
+        <a href="/pages/projects.html" style="margin-top: 5px; position: relative;"><i class="fa-solid fa-layer-group"></i>
+            <h4 id="thing3" style="display: none;"> Projects</h4>
+        </a>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
