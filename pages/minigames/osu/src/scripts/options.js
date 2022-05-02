@@ -29,7 +29,7 @@ let defaultOptions = {
 		scoreUpdateRate: "Equal to frame rate",
 	},
 	Skin: {
-		currentSkin: "Default",
+		currentSkin: "Ajax Transparent",
 	},
 	Maintainence: {
 		developerMode: false,

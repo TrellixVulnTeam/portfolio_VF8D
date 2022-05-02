@@ -86,7 +86,7 @@ animationManager.addEvent(new TimedEvent(0.6, function() {
 	document.getElementById("intro-text").textContent = "welcome to";
 }));
 animationManager.addEvent(new TimedEvent(0.9, function() {
-	document.getElementById("intro-text").textContent = "welcome to osu!";
+	document.getElementById("intro-text").textContent = "welcome to osw!";
 	document.getElementById("intro-text").style.letterSpacing = "0.75vh";
 }));
 animationManager.addEvent(new TimedEvent(1.6, function() {
