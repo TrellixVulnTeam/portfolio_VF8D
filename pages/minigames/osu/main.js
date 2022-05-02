@@ -693,7 +693,7 @@ document.getElementById("menu-bar-exit").addEventListener("click", function() {
 	document.getElementById("sidenav-left").style.width = "0";
 	document.getElementById("sidenav-left").style.opacity = 0;
 	setTimeout(function() {
-		window.close();
+		window.location.href = '../../minigames.html';
 	}, 4000);
 
 	function reduceVolume() {
