@@ -1,4 +1,4 @@
-const BUILD_PREFIX = "osw!browser";
+const BUILD_PREFIX = "osu!browser";
 const MAJOR_VERSION = 0;
 const MINOR_VERSION = 0;
 const PATCH_VERSION = 1;
