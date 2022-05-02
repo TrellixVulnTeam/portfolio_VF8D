@@ -1190,7 +1190,6 @@ export function playMap(mapData, mods) {
 				
 			}
 		}
-		/* thanks to https://github.com/N3bby/osuBMParser/issues/2 */
 		let sliderSpeedMultiplier = currentLoadedMap.SliderMultiplier;
 		if (currentLoadedMap.timingPoints[currentLoadedMap.timingPoints.length - 1].uninherited === 1) {
 			sliderSpeedMultiplier *= Formulas.sliderMultiplier(currentLoadedMap.timingPoints[currentLoadedMap.timingPoints.length - 1].beatLength);

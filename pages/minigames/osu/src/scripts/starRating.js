@@ -1,4 +1,4 @@
-/* used https://github.com/Francesco149/ojsama by https://github.com/Francesco149 */
+
 import * as Formulas from "./formulas.js"
 const STAR_RATING_VERSION = 2;
 const HARD_ROCK_MULTIPLIER = 1.4;
