@@ -146,17 +146,27 @@
 								
 								blinkSuperBubbles();
 								
-							} else if (e.keyCode >= 65 && e.keyCode <= 87 && !PAUSE && !PACMAN_DEAD && !LOCK) { 
-								if ( e.keyCode === 68 ) { 
+							} else if (e.keyCode >= 37 && e.keyCode <= 87 && !PAUSE && !PACMAN_DEAD && !LOCK) { 
+								if ( e.keyCode === 39 ) { 
 									movePacman(1);
+								} else if ( e.keyCode === 40 ) { 
+									movePacman(2);
+								} else if ( e.keyCode === 37 ) { 
+									movePacman(3);
+								} else if ( e.keyCode === 38 ) { 
+									movePacman(4);
 								} else if ( e.keyCode === 83 ) { 
 									movePacman(2);
 								} else if ( e.keyCode === 65 ) { 
 									movePacman(3);
+								} else if ( e.keyCode === 68 ) { 
+									movePacman(1);
 								} else if ( e.keyCode === 87 ) { 
 									movePacman(4);
 								}
-							} else if (e.keyCode === 68 && !PAUSE) { 
+
+
+							} else if (e.keyCode === 80 && !PAUSE) { 
 								/*if ( $("#canvas-paths").css("display") === "none" ) { 
 									$("#canvas-paths").show();
 								} else { 
@@ -199,10 +209,12 @@
 		</div>
 	
 		<div id="home">
+			<a href="../../minigames.html">
 			<h1>pac-man</h1>
+		</a>
 			<a class="sound" id="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>
 			<a href="../"><canvas id="canvas-home-title-pacman"></canvas></a>
-			
+		
 			<div id="presentation">
 				<div id="presentation-titles">character &nbsp;/&nbsp; nickname</div>
 				<canvas id="canvas-presentation-blinky"></canvas><div id="presentation-character-blinky">- shadow</div><div id="presentation-name-blinky">"blinky"</div>
@@ -214,8 +226,10 @@
 		</div>
 	
 		<div id="panel">
+			<a href="../../minigames.html">
 			<h1>pac-man</h1>
 			<canvas id="canvas-panel-title-pacman"></canvas>
+		</a>
 			<div id="score"><h2>1UP</h2><span>00</span></div>
 			<div id="highscore"><h2>High Score</h2><span>00</span></div>
 			<div id="board">
