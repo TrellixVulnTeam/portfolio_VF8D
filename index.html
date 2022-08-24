@@ -13,6 +13,27 @@
     <title>SysWhite // Home</title>
 </head>
 <body>
+  <script class="timer">
+    var countDownDate = new Date("Sep 31, 2022 16:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      document.getElementById("timer1").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      document.getElementById("timer2").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer1").innerHTML = "Please wait...";
+        document.getElementById("timer2").innerHTML = "Please wait...";
+      }
+    }, 1000);
+    </script>
   <header>
     
     <div class="logo">
@@ -22,13 +43,13 @@
     <nav>
         <ul class="nav__links">
             <li><a href="https://syswhite.tk">Home</a></li>
-            <li><a href="https://syswhite.tk/pages/minigames.html">Minigames</a></li>
-            <li><a href="https://syswhite.tk/pages/projects.html">Projects</a></li>
-            <li><a href="https://syswhite.tk/pages/info.html">About</a></li>
+            <li><a href="/404">Minigames</a></li>
+            <li><a href="/404">Projects</a></li>
+            <li><a href="/404">About</a></li>
         </ul>
     </nav>
-    <p class="cta" href="https://syswhite.tk">??/??/2022</p>
-    <p class="menu cta">Menu</p>
+    <p class="cta" id="timer1">I 💖 U</p>
+    <p class="menu cta" id="timer2">Menu</p>
     <div class="overlay">
       <a class="close">&times;</a>
       <div class="overlay__content">
@@ -99,7 +120,7 @@
 
   <div class="content">
     <div class="center-content">
-      <h1 style="margin: 0; padding-top: 10px;">This website isn't finished and everything has to be built by syswhite, what you are seeing on this page is the first version of the new portfolio. <br><br> This new version will be released as soon is finished<br><br>Extimated finish date: ??/??/2022</h1>
+      <h1 style="margin: 25px; padding-top: 10px;">This website isn't finished and everything has to be built by syswhite, what you are seeing on this page is the first version of the new portfolio.</h1>
     </div>
 
   </div>
