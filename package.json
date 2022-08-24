@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SysWhiteDev/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SysWhiteDev/portfolio/issues"
+  },
+  "homepage": "https://github.com/SysWhiteDev/portfolio#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "pug": "^3.0.2"
+  }
+}
