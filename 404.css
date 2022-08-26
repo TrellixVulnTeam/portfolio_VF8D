@@ -11,6 +11,23 @@ body {
   display: table;
   margin: 0; }
 
+button {
+  padding: 9px 25px;
+  background-color: #0088a9;
+  color: white;
+  border: none;
+  margin: 16px;
+  font-weight: 400;
+  border-radius: 0.28571429rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s; 
+}
+  
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8); 
+}
+  
+
 .bottom {
   position: fixed;
   bottom: 1px; }
@@ -86,7 +103,6 @@ header {
   border: none;
   margin: 16px;
   border-radius: 0.28571429rem;
-  cursor: pointer;
   transition: background-color 0.3s ease 0s; }
 
 .cta:hover {
@@ -567,24 +583,42 @@ header {
 .snowflake:nth-child(6n) {
   filter: blur(4px); }
 
-.content {
-  background-color: #0d0d0d;
-  z-index: 2;
-  height: 100%;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  position: relative; }
-
-.center-content {
-  margin: 0 auto;
-  width: 60%;
-  height: 100%;
-  border-radius: 5px;
-  padding: 3px;
-  color: white;
-  background-color: #1f1f1f; }
-
+  .content{
+    background-color: #0d0d0d;
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+  
+  .center-content {
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    background-color: #1f1f1f;
+    overflow:hidden;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;   
+  }
+  
+  .alert {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 15px;
+    padding: 2px;
+    color: white;
+    background-color: #e23a3a;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;   
+    font-size: 10px;
+  }
+  
 .footer {
   height: 50px;
   margin-top: -50px; }
