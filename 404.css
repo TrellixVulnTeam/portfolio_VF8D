@@ -149,6 +149,43 @@ header {
   font-size: 60px;
   color: #edf0f1; }
 
+  .content{
+    background-color: #0d0d0d;
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+  
+  .center-content {
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    background-color: #1f1f1f;
+    overflow:hidden;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;   
+  }
+  
+  .alert {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 15px;
+    padding: 2px;
+    color: white;
+    background-color: #e23a3a;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;   
+    font-size: 10px;
+  }
+  
+
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px; }
@@ -162,7 +199,11 @@ header {
   .cta {
     display: none; }
   .menu {
-    display: initial; } }
+    display: initial; } 
+  .center-content {
+    width: 100%;
+  }
+  }
 
 .snowflake {
   --size: 1vw;
@@ -583,42 +624,7 @@ header {
 .snowflake:nth-child(6n) {
   filter: blur(4px); }
 
-  .content{
-    background-color: #0d0d0d;
-    z-index: 2;
-    height: 100%;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    position: relative;
-  }
-  
-  .center-content {
-    margin: 0 auto;
-    width: 60%;
-    border-radius: 15px;
-    padding: 10px;
-    color: white;
-    background-color: #1f1f1f;
-    overflow:hidden;
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box;    
-    box-sizing: border-box;   
-  }
-  
-  .alert {
-    margin: 0 auto;
-    width: 100%;
-    border-radius: 15px;
-    padding: 2px;
-    color: white;
-    background-color: #e23a3a;
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box;    
-    box-sizing: border-box;   
-    font-size: 10px;
-  }
-  
+
 .footer {
   height: 50px;
   margin-top: -50px; }
